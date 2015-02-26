@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Spring</title>
+  <link rel="alternate" href="https://spring.io/blog" />
+  <link rel="self" href="https://spring.io/blog.atom" />
+  <id>http://spring.io/blog.atom</id>
+  <icon>https://spring.io/favicon.ico</icon>
+  <updated>2014-09-15T18:18:00Z</updated>
+  <entry>
+    <title>SpringOne2GX 2014 - Day 2</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/15/springone2gx-2014-day-2" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2014-09-14:1762</id>
+    <updated>2014-09-15T18:18:00Z</updated>
+    <content type="html">&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/day2-collage.jpg" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/day2-collage.jpg" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Day 2's  kicked off with a bang! My theory is that by that point people had seen a day's worth of sessions, and so the keynote needed to be full of impactful, big-bang announcements and discussions in order to remain memorable.  It needed to raise the   bar and demonstrate leadership.  And it did.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-spring-framework-41" class="anchor" href="#spring-framework-41" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Spring Framework 4.1&lt;/h2&gt;
+
+&lt;p&gt;Spring framework lead &lt;a href="http://spring.io/team/jhoeller"&gt;&lt;strong&gt;Juergen Hoeller&lt;/strong&gt;&lt;/a&gt;  kicked things off with an introduction to the new featues in the &lt;a href="https://spring.io/blog/2014/09/04/spring-framework-4-1-ga-is-here"&gt;recently-released&lt;/a&gt; &lt;a href="http://spring.io/projects/spring-framework"&gt;Spring 4.1&lt;/a&gt;.   &lt;/p&gt;
+
+&lt;p&gt;Spring Framework 4.1 provides annotated JMS listener methods, comprehensive for the final JSR 107 specification, flexible resolution and transformation of static web resources, additional MVC views (like Groovy Server Pages),  websocket-support improvements, and many more new features. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/jms-listeners.png" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/jms-listeners.png" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/declarative-view-resolution.png" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/declarative-view-resolution.png" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/tweet-websockets.png" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/tweet-websockets.png" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-spring-xd" class="anchor" href="#spring-xd" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Spring XD&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://spring.io/projects/spring-xd"&gt;Spring XD&lt;/a&gt; co-lead  &lt;a href="http://spring.io/team/mark-fisher"&gt;&lt;strong&gt;Mark Fisher&lt;/strong&gt;&lt;/a&gt; took the stage to introduce the project as it stands now, a year after its debut last year at SpringOne2GX 2013. Mark invited us to consider how far things have come since the early days of Spring, and to consider how interesting the opportunity continues to be  today. Then... he told a   &lt;em&gt;joke&lt;/em&gt;: "the past, the present and the future walk into a bar. It was tense." &lt;/p&gt;
+
+&lt;p&gt;It took a moment, but the room recovered. Reluctantly. Mark offered to continue as a full time developer and not switch to comedy.&lt;/p&gt;
+
+&lt;p&gt;Mark showed us how Spring XD a looks at the future. It is built on top of first-class components like &lt;a href="http://spring.io/projects/spring-batch"&gt;Spring Batch&lt;/a&gt;, &lt;a href="http://spring.io/projects/spring-integration"&gt;Spring Integration&lt;/a&gt;, &lt;a href="http://spring.io/projects/spring-data"&gt;Spring Data&lt;/a&gt;, &lt;a href="http://redis.io"&gt;Redis&lt;/a&gt;, &lt;a href="http://rabbitmq.com"&gt;RabbitMQ&lt;/a&gt;, &lt;a href="http://zookeeper.apache.org"&gt;Zookeeper&lt;/a&gt;, and Netflix's Zookeeper-addition &lt;a href="http://curator.apache.org/"&gt;Curator&lt;/a&gt;.   It offers a simple, linux like domain-specific language (DSL) that requires no compliation, making Hadoop more approachable to beginners and experts alike.   Extending Spring XD is done in Spring/Java, often in Spring Integration to adapt to customer's unique systems as Spring XD sources and sinks.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/spring-xd-unified-platform.png" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/spring-xd-unified-platform.png" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It provides   powerful data-integration and stream processing capabilities in an operator- and developer-familiar package. Mark introduces a demonstration that analyses the resource consumption of a smart power grid and then, using &lt;a href="http://en.wikipedia.org/wiki/Predictive_Model_Markup_Language"&gt;PMML&lt;/a&gt; machine-learning support in Spring XD, predicts future consumption levels.   The example uses numerous nodes deployed across multiple cluster nodes, but the assembly and description of the solution in Spring XD itself is really simple! (The crowd seemed to think so, too!)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/tweet-xd.png" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/tweet-xd.png" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-microservices" class="anchor" href="#microservices" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Microservices&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;* Dr. Dave Syer&lt;/em&gt;*  (co-founder of &lt;a href="http://spring.io/projects/spring-batch"&gt;Spring Batch&lt;/a&gt;,  co-lead of &lt;a href="http://spring.io/projects/spring-security-oauth"&gt;Spring Security OAuth&lt;/a&gt; and &lt;a href="https://spring.io/projects/spring-boot"&gt;Spring Boot&lt;/a&gt;) rejoined the stage to follow up on his day 2 update on Spring Boot with some news about, and an introduction to, the new &lt;a href="http://spring.io/projects/spring-cloud"&gt;Spring Cloud&lt;/a&gt; umbrella project. Spring Cloud has historically contained  Platform-as-a-Service connectors that let you consume services - databases, message queues, etc. - from within a PaaS environment. Spring Cloud now has an expanded scope to define and provide software to better enable modern, &lt;em&gt;cloud&lt;/em&gt;-y architectures, like the &lt;a href="http://martinfowler.com/articles/microservices.html"&gt;microservices&lt;/a&gt; that Netflix builds atop Spring Boot and &lt;a href="http://netflix.github.io/"&gt;their own, open-source stack&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Spring Cloud aims to provide solutions for &lt;em&gt;emergent patterns&lt;/em&gt; in large scale, often cloud-based applications: &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/dr-syer-microservices-demo-emergent-patterns-of-microservices.png" target="_blank"&gt;&lt;img width="400" src="https://raw.githubusercontent.com/joshlong/meh/master/dr-syer-microservices-demo-emergent-patterns-of-microservices.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The new Spring Cloud project, in fact, integrates popular Netflix OSS components like &lt;a href="https://github.com/Netflix/Hystrix"&gt;Hystrix&lt;/a&gt; (which provides implementations of their famous &lt;a href="http://www.slideshare.net/benjchristensen/june-28th-meetup?qid=28efee4d-1ab0-4ed2-9547-86e20eb2f8ea&amp;amp;v=default&amp;amp;b=&amp;amp;from_search=36"&gt;&lt;em&gt;reliability patterns&lt;/em&gt;&lt;/a&gt;) and  &lt;a href="https://github.com/Netflix/Eureka"&gt;Eureka&lt;/a&gt; (which provides service discovery and location).   &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/spring-cloud-components.png" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/spring-cloud-components.png" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Dr. Syer introduced a simple microservice that demonstrated two services, one that provided a customers repository and another that provided access to merchants (stores). The customer service returned information about the nearby stores. This information came from the stores service. If the stores service were taken offline, the customers service continued to function.  &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/tweet-spring-cloud-netflix.png" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/tweet-spring-cloud-netflix.png" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This effort builds upon   Spring Boot with an eye towards  simplifying the development of microservices. This message seems to have resonated well, and we think that the combination of Spring Boot, Spring Cloud and &lt;a href="http://www.cloudfoundry.com"&gt;CloudFoundry&lt;/a&gt; will make a killer combination for JVM apps that need to start life as a monolith, but  then need to distrubute and decentralize in order to scale. Adrian Cockcroft explains why distribution and decentralization are so important extremely  well in &lt;a href="http://www.infoq.com/interviews/adrian-cockcroft-microservices-devops"&gt;an interview on InfoQ.&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/tweet-netflix-spring.png" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/tweet-netflix-spring.png" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-reactor" class="anchor" href="#reactor" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Reactor&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/reactor"&gt;Reactor Project&lt;/a&gt; lead &lt;a href="http://spring.io/team/jbrisbin"&gt;&lt;em&gt;*Jon Brisbin *&lt;/em&gt;&lt;/a&gt; took the stage to then update us on the state of the Reactor project. Reactor has made great strides since we saw it debut last year. It's since become part of  a the &lt;a href="http://www.reactive-streams.org"&gt;Reactive Streams&lt;/a&gt; effort jointly led by teams at Netflix, Typesafe, Red Hat, Twitter, Oracle, and Pivotal, among others. &lt;/p&gt;
+
+&lt;p&gt;It provided the definition for the &lt;a href="https://github.com/spring-cloud-samples/processor/blob/master/src/main/java/demo/domain/LocationService.java"&gt;&lt;code&gt;LocationProcessor&lt;/code&gt;&lt;/a&gt; service in the microservices segment. (The &lt;code&gt;LocationProcessor&lt;/code&gt; is a nice example of the easy-to-use Java 8 DSL, too!) Reactor is a natural fit for microservices: &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/reactive-architecture.png" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/reactive-architecture.png" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It's a foundational piece or well integrated with  Spring Framework 4.0's websocket support, Spring XD, Spring Integration, the upcoming Grails 3.0's event system, and much more. In fact, we saw Reactor in action earlier in the evening's keynote!  &lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-for-more" class="anchor" href="#for-more" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;For More...&lt;/h2&gt;
+
+&lt;p&gt;...stay tuned to this blog and &lt;a href="http://spring.io/blog/"&gt;&lt;em&gt;This Week in Spring&lt;/em&gt;&lt;/a&gt; every Tuesday! &lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne2GX 2014 - Day 1</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/10/springone2gx-2014-day-1" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2014-09-10:1760</id>
+    <updated>2014-09-10T05:40:00Z</updated>
+    <content type="html">&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/day1-collage.jpg" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/day1-collage.jpg" width="500" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://springone2gx.com/"&gt;SpringOne2GX&lt;/a&gt; kicked off with a bang on Monday night!&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-the-ebb-and-flow-of-development" class="anchor" href="#the-ebb-and-flow-of-development" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;"The Ebb and Flow" of Development&lt;/h2&gt;
+
+&lt;p&gt;The keynote kicked off with Pivotal's own SVP of R&amp;amp;D, &lt;a href="https://twitter.com/hughewilliams"&gt;Hugh Williams&lt;/a&gt; (formerly of e-Bay and Microsoft research) who  talked about the &lt;em&gt;ebb&lt;/em&gt; (the awkward interruptions in momentum)  and &lt;em&gt;flow&lt;/em&gt; of software development. Hugh touched on his prior lives at Microsoft (where he helped develop the Bing search engine) and at eBay (a huge Spring user, we learned!) and spoke about what Spring brings to the table: the ability to be nimble, agile. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/tweet-1-ebay_used_spring.png" target="_blank"&gt;&lt;img width="400" src="https://raw.githubusercontent.com/joshlong/meh/master/tweet-1-ebay_used_spring.png" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-spring-io-platform" class="anchor" href="#spring-io-platform" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Spring IO Platform&lt;/h2&gt;
+
+&lt;p&gt;Next up was Spring framework lead &lt;a href="Spring%20Juergen"&gt;Juergen Hoeller&lt;/a&gt; who revisited the Spring IO platform story originally introduced at SpringOne2GX 2013. He introduced the "tree." Third-party dependencies form the roots of the Spring IO platform. Spring Boot, Spring Foundation (the Spring framework and other projects) and the &lt;a href="https://spring.io/blog/2014/06/26/introducing-the-spring-io-platform"&gt;Spring IO Platform distribution&lt;/a&gt; provide the stable trunk to support runtimes  like Spring XD and Grails. Applications (leaves, in the diagram) grow from those branches, resting on the solid trunk that is Spring Boot. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/spring-tree.jpg" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/spring-tree.jpg" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Spring IO is moving quickly, too! Spring IO distribution represents an opportunity to aggregate and harmonize projects  with a known release cadence: Spring framework moves conservatively, Spring Boot and Spring Data move agressively. Spring IO represents an alternative release cycle; minor versions will aggregate other minor releases whenever they appear.  &lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-spring-boot" class="anchor" href="#spring-boot" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Spring Boot&lt;/h2&gt;
+
+&lt;p&gt;Next, the good &lt;a href="http://twitter.com/david_syer"&gt;Dr. Dave Syer&lt;/a&gt; took the stage to talk about where Spring Boot  (which also debuted at  SpringOne2GX 2013, incidentally!) is at today. Spring Boot is now pervasive across all the Spring projects, and has almost 100 contributors!  Netflix, he noted, has proven the value of microservices by winning the market with them. But it's not going to be a free lunch: it can be very difficult to get it right, and this is a natural place for Spring Boot to add value and to simplify things. Enter the newly formed &lt;a href="http://spring.io/spring-cloud"&gt;Spring Cloud&lt;/a&gt; umbrella project. Besides hosting the PaaS-specific connectors formerly under the Spring Cloud mantra, the Spring Cloud project aims to simplify  microservice system architectures.  &lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-netflix" class="anchor" href="#netflix" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Netflix&lt;/h2&gt;
+
+&lt;p&gt;Next up was Netflix's &lt;a href="http://twitter.com/aglover"&gt;Andy Glover&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/netflix.png" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/netflix.png" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/velocity-jvm.png" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/velocity-jvm.png" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Netflix needed velocity. "Speed is a competitive advantage." Andy's teams looked at technologies like Ruby on Rails and Node.js to regain the velocity they thought missing on the JVM. Today, Netflix uses  Spring Boot as the basis of their service architecture because it gives them the  scalability and maturity of the JVM and the velocity to deliver. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/spring-boot-is-the-lighter-faster-java.png" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/spring-boot-is-the-lighter-faster-java.png" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Referring to a book heralding a better way forward when Spring was born, Andy said: "'Spring Boot is the better, faster, lighter Java' that we wanted ten years ago." &lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-groovy--grails-updates" class="anchor" href="#groovy--grails-updates" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Groovy &amp;amp; Grails Updates&lt;/h2&gt;
+
+&lt;p&gt;Last, but not least, Grails lead (and former Dallas resident!) &lt;a href="http://twitter.com/graemerocher"&gt;Graeme Rocher&lt;/a&gt;   took the stage to give an update on the Groovy and Grails community. Grails 2.4 was just released and is an ongoing maintenance release; it now supports &lt;strong&gt;1100&lt;/strong&gt; plugins! Looking forward, Grails 3.0 (which will be based on Spring Boot!) wowed the audience with entire, Tweet-sized, &lt;em&gt;microservices&lt;/em&gt;! &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/joshlong/meh/master/grails-microservice.png" target="_blank"&gt;&lt;img src="https://raw.githubusercontent.com/joshlong/meh/master/grails-microservice.png" width="400" style="max-width:100%;"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-whats-next" class="anchor" href="#whats-next" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;What's Next&lt;/h2&gt;
+
+&lt;p&gt;We'll be back with a day 2 wrap-up on everything Spring, Groovy &amp;amp; Grails, Cloud Foundry and Big-data! &lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring (SpringOne2GX 2014 edition!) - September 9, 2014</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/09/this-week-in-spring-springone2gx-2014-edition-september-9-2014" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2014-09-09:1759</id>
+    <updated>2014-09-09T22:08:00Z</updated>
+    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;, live from &lt;a href="http://springone2gx.com"&gt;SpringOne2GX 2014&lt;/a&gt;! This year's show is something to behold! We kicked off the show yesterday with one amazing keynote here in the "lone-star state" featuring Pivotal SVP of engineering &lt;a href="https://twitter.com/hughewilliams"&gt;Hugh Williams&lt;/a&gt;, the Spring team leads  &lt;a href="http://twitter.com/springjuergen"&gt;Juergen Hoeller&lt;/a&gt;, &lt;a href="http://twitter.com/david_syer"&gt;Dave Syer&lt;/a&gt;, &lt;a href="http://twitter.com/graemerocher"&gt;Graeme Rocher&lt;/a&gt; and and Netflix's &lt;a href="http://twitter.com/aglover"&gt;Andy Glover&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We'll do some recap blogs, of course, so stay tuned. Before we get started with this week's roundup, check out this video of the SpringOne2GX 2014 logo being projected onto the Dallas Omni hotel!&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/9sQZItUcokA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+ 
+
+&lt;div&gt; 
+
+&lt;p&gt; And, while this is nothing like what the recording (which'll be available soon, anyway..) or even a well-written recap (stay tuned! Also coming..) would be, here are some choice tweets from last night's keynote to whet your appetite:&lt;/p&gt;
+
+  &lt;a href="https://camo.githubusercontent.com/113b62c93978a87fce4b4488a4c5470708a4ef7f/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f4278487645522d435541453461386b2e6a70673a6c61726765" target="_blank"&gt;&lt;img width="200" src="https://camo.githubusercontent.com/113b62c93978a87fce4b4488a4c5470708a4ef7f/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f4278487645522d435541453461386b2e6a70673a6c61726765" data-canonical-src="https://pbs.twimg.com/media/BxHvER-CUAE4a8k.jpg:large" style="max-width:100%;"&gt;&lt;/a&gt;&lt;p&gt;Indeed, even the week leading up to SpringOne2GX has been &lt;em&gt;epic&lt;/em&gt; as the team's busily been releasing new, exciting bits for us to use! This week's roundup is &lt;em&gt;packed&lt;/em&gt; with good stuff.&lt;/p&gt;
+
+ 
+
+
+&lt;ol&gt;
+&lt;li&gt;Just in time for SpringOne2GX, &lt;a href="http://twitter.com/springjuergen"&gt;Spring lead Juergen Hoeller&lt;/a&gt; &lt;a href="http://spring.io/blog/2014/09/04/spring-framework-4-1-ga-is-here"&gt;has just announced that Spring 4.1 is now available&lt;/a&gt;! 
+The new release is packed with great stuff including JMS annotations,  comprehensive JCache (JSR 107) support, new Spring MVC views, websocket refinements, improved performance, and &lt;em&gt;much&lt;/em&gt; more! 
+&lt;/li&gt;
+&lt;li&gt;Spring Boot co-lead Phil Webb has just  announced  &lt;a href="http://spring.io/blog/2014/09/08/spring-boot-1-2-0-m1-available-now"&gt;Spring Boot 1.2.0.M1&lt;/a&gt;, hot on the heals of &lt;a href="http://spring.io/blog/2014/09/05/spring-boot-1-1-6-released"&gt;Spring Boot 1.1.6&lt;/a&gt;. 1.1.6 is a bug-fix that's highly recommended.  1.2.0.M1, on the other hand, is the first milestone of the very exciting 1.2 Spring Boot release. It's packed with new features: JTA support, easier consumption of JNDI-bound resources (a nice feature in its own right, but especially convenient in light JTA!),  auto-configuration for the Spring Cloud PaaS connectors, easy SSL termination with Tomcat and Jetty, and improved metrics for &lt;code&gt;DataSource&lt;/code&gt;s and health indicators.&lt;/li&gt;
+&lt;li&gt;Spring Data lead Oliver Gierke has just announced that &lt;a href="http://spring.io/blog/2014/09/09/spring-data-release-train-evans-goes-ga"&gt;Spring Data Evans has gone GA&lt;/a&gt;!   The new release is &lt;em&gt;crammed&lt;/em&gt; full of features! Redis Sentinel, ALPS and excerpt projections, multi-store configuration, a baseline of Spring 4.0, support for &lt;code&gt;top&lt;/code&gt; and &lt;code&gt;first&lt;/code&gt; as keywords in derived queries, MongoDB 2.6 full text, and &lt;em&gt;much&lt;/em&gt; more.&lt;/li&gt;
+&lt;li&gt;Continuing the data theme, &lt;a href="http://spring.io/blog/2014/09/08/spring-for-apache-hadoop-2-1-0-m1-released"&gt;Spring for Apache Hadoop ninja Thomas Risberg  has just been released&lt;/a&gt;. The new release adds support for append-mode store writers, kerberos configuration for secured clusters, container grouping and clustering in Spring YARN, and it remains compatible with Hadoop 2.0+, Pivotal HD 2.0, Cloudera CDH5, and Hortonworks 2.1.&lt;/li&gt;
+&lt;li&gt; 
+      I'll be giving &lt;em&gt;two&lt;/em&gt; webinars soon: one on &lt;a href="https://spring.io/blog/2014/07/29/webinar-microservices-with-spring-boot-sept-16th"&gt;building microservices with Spring on September 16th&lt;/a&gt;, and the other &lt;a href="https://spring.io/blog/2014/07/29/webinar-process-driven-spring-applications-with-activiti-sept-23rd"&gt;on using the Activiti workflow engine with Spring on September 23rd&lt;/a&gt;. Register now  and bring your questions, comments and more! We'll have lots to talk about and it should be a lot of fun!
+&lt;/li&gt;
+&lt;li&gt;One of my heroes, &lt;a href="http://spring.io/blog/2014/09/07/spring-integration-java-dsl-1-0-milestone-3-available"&gt;Spring Integration ninja Artem Bilan has just announced the Spring Integration Java configuration DSL  milestone 3&lt;/a&gt;. The blog has a list of the (many) new features &lt;em&gt;and&lt;/em&gt;   supporting code. I couldn't do it justice here, just check it out.&lt;/li&gt;
+&lt;li&gt;Spring ninja and all-around-nice guy &lt;a href="http://twitter.com/ankinson/"&gt;Andy Wilkinson&lt;/a&gt; has just announced &lt;a href="http://spring.io/blog/2014/09/07/spring-io-platform-1-0-2-released"&gt;the release of the Spring IO platform 1.0.2 release&lt;/a&gt;. The new release incorporates many new projects, so be sure to check it out. The Spring IO platform is an attempt at harmonizing dependencies across the many Spring projects so that, from the perspective of the dependency consumer, there's never any conflicts with common libraries.&lt;/li&gt;
+&lt;li&gt;Spring Integration lead &lt;a href="http://spring.io/blog/2014/09/05/spring-amqp-for-java-1-4-milestone-1-available"&gt;Gary Russell has just announced Spring AMQP (for Java) 1.4 milestone 1&lt;/a&gt;. The new release includes annotation support (&lt;code&gt;@EnableRabbit&lt;/code&gt;) and annotation-driven message listeners (&lt;code&gt;@RabbitListener&lt;/code&gt;). Huzzah! This mirrors the similar support for JMS in Spring 4.1.&lt;/li&gt;
+&lt;li&gt;Artem is not here this week at &lt;a href="http://springone2gx.com/"&gt;SpringOne2GX&lt;/a&gt; for sad, complicated reasons (we miss you Artem!), but that didn't stop him from making quite a splash this last week first with the Spring Integration Java configuration DSL release (see above) and &lt;a href="http://spring.io/blog/2014/09/05/spring-integration-4-1-milestone-1-available"&gt;now the Spring Integration 4.1 Milestone 1 release&lt;/a&gt;. The Spring Integration release includes a &lt;em&gt;lot&lt;/em&gt; of cool features, including the migration of common types to Spring 4 itself, performance improvements, the introduction of the Spring 4.1 SpEL compiler, web socket adapters (yes, web socket adapters!), &lt;a href="Reactor%20project%20support"&gt;http://github.com/projectreactor&lt;/a&gt;, a &lt;a href="http://github.com/RichardHightower/boon/wiki"&gt;Boon&lt;/a&gt;-powered JSON mapper, an implementation of the EIP splitter pattern that can return an &lt;code&gt;Iterator&lt;/code&gt; for results (and, thus, can &lt;em&gt;stream&lt;/em&gt; them).&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://twitter.com/mraible"&gt;Our pal Matt Raible&lt;/a&gt; took a look at using &lt;a href="http://raibledesigns.com/rd/entry/getting_started_with_jhipster_on"&gt;the Spring Boot-powered JHipster project&lt;/a&gt;. He hit some rough patches, but the blog provides all sorts of good information on how he got around it so that you can avoid them and really fly!&lt;/li&gt;
+&lt;li&gt;The &lt;em&gt;Blog4Java&lt;/em&gt; blog (run by our pal &lt;a href="http://twitter.com/jbbarquero"&gt;Javier Barquero&lt;/a&gt;)  has a  &lt;a href="http://malsolo.com/blog4java/?p=375"&gt;follow up post to his look at using Spring Batch&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;And, of course, what SpringOne2GX would be complete &lt;a href="http://blog.pivotal.io/pivotal/news-2/springone-2gx-conference-kicks-off-in-dallas-with-focus-on-microservices-and-big-data"&gt;without the annual press-release&lt;/a&gt;?&lt;/li&gt;
+&lt;li&gt;There's an interesting post on the Chariot Solutions blog &lt;a href="http://chariotsolutions.com/blog/post/converting-java-spring-to-scala/"&gt;on converting a Spring Boot application from Java to Scala&lt;/a&gt; - definitely worth a look. Interestingly, it doesn't seem like you gain all that much over just using Java 8 in this particular example...&lt;/li&gt;
+&lt;li&gt;Are you in the &lt;strong&gt;Dallas Fort Worth&lt;/strong&gt; area? Since we're throwing &lt;a href="http://springone2gx.com"&gt;SpringOne2GX 2014&lt;/a&gt; in Dallas, &lt;a href="http://javamug.org/"&gt;we thought we'd take a moment to round up some.. ok a &lt;em&gt;lot&lt;/em&gt;.. of the Spring team and head on over to the local Java user group&lt;/a&gt; (called the "Java Metroplex Users Group,"  or Java MUG for short) and say hi. I hope you'll consider joining us for what promises to be a really fun night!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Data Release Train Evans Goes GA</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/09/spring-data-release-train-evans-goes-ga" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Oliver Gierke</name>
+    </author>
+    <id>tag:spring.io,2014-09-09:1758</id>
+    <updated>2014-09-09T16:10:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the entire Spring Data team, I'd like to announce the general availability of the Spring Data release train iteration called Evans. The release ships 11 modules to help you build sophisticated data access layers on top of relational and non-relational data stores.&lt;/p&gt;
+
+&lt;p&gt;The major themes of this iteration were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Upgrade Spring baseline to 4.0&lt;/li&gt;
+&lt;li&gt;Support for &lt;code&gt;top&lt;/code&gt; and &lt;code&gt;first&lt;/code&gt; as keywords in derived queries&lt;/li&gt;
+&lt;li&gt;Support for MongoDB 2.6 features like text search&lt;/li&gt;
+&lt;li&gt;SpEL support for Spring Data JPA (Spring Security integration)&lt;/li&gt;
+&lt;li&gt;Redis Sentinel support&lt;/li&gt;
+&lt;li&gt;ALPS and excerpt projections for Spring Data REST&lt;/li&gt;
+&lt;li&gt;Support for custom implementations in the CDI extension&lt;/li&gt;
+&lt;li&gt;Improved multi-store configuration&lt;/li&gt;
+&lt;li&gt;Asciidoctor for reference documentation&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Here's the full list of participating modules:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Spring Data Commons 1.9 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-commons/1.9.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.9.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.9.0.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.9.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data JPA 1.7 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-jpa/1.7.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.7.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.7.0.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.7.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data MongoDB 1.6 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-mongodb/1.6.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.6.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.6.0.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.6.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Neo4j 3.2 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-neo4j/3.2.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/3.2.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/3.2.0.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/3.2.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Solr 1.3 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-solr/1.3.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/1.3.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/1.3.0.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/1.3.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Couchbase 1.2 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-couchbase/1.2.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/1.2.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/1.2.0.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/1.2.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Cassandra 1.1 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-cassandra/1.1.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.1.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.1.0.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.1.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Elasticsearch 1.1 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-elasticsearch/1.1.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/1.1.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/1.1.0.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/1.1.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Gemfire 1.5 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-gemfire/1.5.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.5.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.5.0.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.5.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Redis 1.4 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-redis/1.4.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.4.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.4.0.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.4.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data REST 2.2 GA - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-rest-webmvc/2.2.0.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.2.0.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.2.0.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.2.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;The home stretch to GA allowed us to fix &lt;a href="https://jira.spring.io/issues/?filter=14761"&gt;72 tickets&lt;/a&gt; which leaves us with 294 tickets fixed and implemented for Evans overall. Find a curated change log for the release train in &lt;a href="https://github.com/spring-projects/spring-data-commons/wiki/Release-Train-Evans"&gt;our wiki&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The example projects have been updated to the latest version already and are a good starting point to familiarize yourself with the new features. Watch this space for an upcoming blog series which will introduce some of the features introduced in greater detail.&lt;/p&gt;
+
+&lt;p&gt;The next train iteration is going to be named &lt;a href="http://en.wikipedia.org/wiki/Martin_Fowler"&gt;Fowler&lt;/a&gt; with an expected first milestone in approximately 6 weeks. We're going to ship a final service release for Dijkstra in about 3 weeks time. Looking forward to your feedback!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring for Apache Hadoop 2.1.0.M1 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/08/spring-for-apache-hadoop-2-1-0-m1-released" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Thomas Risberg</name>
+    </author>
+    <id>tag:spring.io,2014-09-08:1757</id>
+    <updated>2014-09-08T17:45:00Z</updated>
+    <content type="html">&lt;p&gt;One year ago we released the first milestone release of the Spring for Apache Hadoop version 2.0 project, just in time for SpringOne 2GX 2013. To keep up the tradition, we are pleased to announce the first milestone release of Spring for Apache Hadoop 2.1, just in time for SpringOne 2GX 2014 in Dallas, TX. The release is now available in the &lt;a href="http://repo.spring.io/libs-milestone/org/springframework/data/spring-data-hadoop/2.1.0.M1/"&gt;Spring IO repository&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Main changes for the 2.1.0.M1 release:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Added support for append mode in store writers&lt;/li&gt;
+&lt;li&gt;Enhancements for kerberos configuration for secured cluster access&lt;/li&gt;
+&lt;li&gt;Support for container grouping and clustering in Spring YARN, which brings functionality for running multiple container types, a new REST API and an improved application model with new client side commands and a command line shell.&lt;/li&gt;
+&lt;li&gt;Starting with this version we support Hadoop 2.0 APIs but no longer provide backwards compatibility with older Hadoop v1 distributions.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;We provide support for the following distributions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Apache Hadoop 2.2.0 (default)&lt;/li&gt;
+&lt;li&gt;Apache Hadoop 2.4.1 (hadoop24)&lt;/li&gt;
+&lt;li&gt;Apache Hadoop 2.5.0 (hadoop25)&lt;/li&gt;
+&lt;li&gt;Pivotal HD 2.0 (phd20)&lt;/li&gt;
+&lt;li&gt;Cloudera CDH5 (cdh5)&lt;/li&gt;
+&lt;li&gt;Hortonworks HDP 2.1 (hdp21)&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Come and check out our two Spring Hadoop related sessions tomorrow Tuesday 9/9 at &lt;a href="http://springone2gx.com"&gt;SpringOne2GX&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="http://2014.event.springone2gx.com/schedule/sessions/introduction_to_spring_for_apache_hadoop.html"&gt;Introduction to Spring for Apache Hadoop&lt;/a&gt; by Thomas Risberg&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://2014.event.springone2gx.com/schedule/sessions/painless_build_and_deploy_for_yarn_applications_with_spring.html"&gt;Painless Build and Deploy for YARN Applications with Spring&lt;/a&gt; by Janne Valkealahti&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;For more project specific information please see the &lt;a href="http://projects.spring.io/spring-hadoop/"&gt;project page&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Boot 1.2.0.M1 Available Now</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/08/spring-boot-1-2-0-m1-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Phil Webb</name>
+    </author>
+    <id>tag:spring.io,2014-09-08:1756</id>
+    <updated>2014-09-08T17:43:46Z</updated>
+    <content type="html">&lt;p&gt;I am pleased to announce that Spring Boot 1.2.0.M1 is available now in the &lt;a href="http://repo.springsource.org/milestone"&gt;Spring milestone repository&lt;/a&gt;. This release builds on &lt;a href="http://spring.io/blog/2014/09/04/spring-framework-4-1-ga-is-here"&gt;Spring Framework 4.1&lt;/a&gt; and provides a number of improvements and new features. Highlights include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Support for distributed JTA transactions across multiple XA resources using either an Atomkos or Bitronix embedded transaction manager or a full Java EE Application Server.&lt;/li&gt;
+&lt;li&gt;Easier configuration of JNDI bound &lt;code&gt;DataSource&lt;/code&gt; and &lt;code&gt;ConnectionFactory&lt;/code&gt; beans.&lt;/li&gt;
+&lt;li&gt;Improved JMS support, including auto-configuration for the Spring Framework 4.1 &lt;code&gt;@EnableJms&lt;/code&gt; annotation.&lt;/li&gt;
+&lt;li&gt;Auto-configuration support for &lt;code&gt;spring-cloud&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Easier SSL configuration for both Tomcat and Jetty.&lt;/li&gt;
+&lt;li&gt;Improved &lt;code&gt;DataSource&lt;/code&gt; Metrics and Health Indicators.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;For a complete list of changes, and for upgrade instructions, see the &lt;a href="http://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.2-Release-Notes"&gt;Spring Boot 1.2 Release Notes&lt;/a&gt; on the WIKI. The &lt;a href="http://docs.spring.io/spring-boot/docs/1.2.0.M1/reference/htmlsingle/"&gt;reference documentation&lt;/a&gt; as also been updated to cover the new features.&lt;/p&gt;
+
+&lt;p&gt;Thanks again to everyone that has contributed to the release! Please give it a go and report any problems using &lt;a href="http://github.com/spring-projects/spring-boot/issues"&gt;the project Issue tracker&lt;/a&gt; page.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Integration Java DSL 1.0 Milestone 3 Available</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/07/spring-integration-java-dsl-1-0-milestone-3-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Artem Bilan</name>
+    </author>
+    <id>tag:spring.io,2014-09-08:1755</id>
+    <updated>2014-09-07T23:59:00Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce that the Java DSL for Spring Integration 1.0 Milestone 3 has been released. 
+Please use the &lt;a href="http://repo.springsource.org/milestone"&gt;Milestone Repository&lt;/a&gt; with Maven or Gradle,
+download a 
+&lt;a href="http://repo.spring.io/milestone/org/springframework/integration/spring-integration-java-dsl/1.0.0.M3"&gt;distribution archive&lt;/a&gt;,
+or see the project &lt;a href="https://github.com/spring-projects/spring-integration-extensions/wiki/Spring-Integration-Java-DSL-Reference"&gt;home page&lt;/a&gt;
+for more information.&lt;/p&gt;
+
+&lt;p&gt;Since the last &lt;a href="https://spring.io/blog/2014/06/18/spring-integration-java-dsl-milestone-2-released"&gt;Milestone 2&lt;/a&gt;, 
+some new features and further improvements, as well as a number of bug fixes have been included to this Milestone, 
+with the GA release due around the end of October.&lt;/p&gt;
+
+&lt;p&gt;First of all thanks for all who are interested in this Spring Integration Extension, provide feedback, 
+share their thoughts and even contribute. &lt;/p&gt;
+
+&lt;p&gt;Here is a summary of major changes:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Spring Integration 4.1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Current Milestone provides compatibility with 
+&lt;a href="https://spring.io/blog/2014/09/05/spring-integration-4-1-milestone-1-available"&gt;Spring Integration 4.1&lt;/a&gt;
+ as well as with &lt;a href="https://spring.io/blog/2014/09/04/spring-framework-4-1-ga-is-here"&gt;Spring Framework 4.1&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The changes include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Spring Integration 4.1 provides &lt;code&gt;Channel names late resolution&lt;/code&gt;, 
+which allows for DSL &lt;code&gt;IntegrationFlow&lt;/code&gt;s definitions to be based on just channel names and avoid workarounds that required 
+&lt;code&gt;@DependsOn&lt;/code&gt; from one flow to another;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;a number of Messaging performance improvements have been included in Spring Framework 4.1, when Spring Integration
+(as well as its DSL) is based on Spring Messaging module;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Spring Framework 4.1 introduced the &lt;a href="http://docs.spring%0A.io/spring/docs/current/spring-framework-reference/html/expressions.html#expressions-spel-compilation"&gt;SpEL Compiler&lt;/a&gt;. 
+It is very useful for Spring Integration, which extensively uses SpEL at runtime. You can enable the SpEL Compiler using the 
+&lt;code&gt;spring.expression.compiler.mode&lt;/code&gt; System Property with a value of &lt;code&gt;IMMEDIATE&lt;/code&gt; or &lt;code&gt;MIXED&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Of course, compatibility with Spring Integration 4.0 still remains.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;IntegrationFlow Lambda&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;IntegrationFlow&lt;/code&gt; bean definition can now be presented as a &lt;code&gt;Lambda&lt;/code&gt; too, to simplify the DSL usage:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Bean&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;IntegrationFlow&lt;/span&gt; &lt;span class="nf"&gt;lambdaFlow&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;filter&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"World"&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;equals&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+                 &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Hello "&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;concat&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+                 &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;handle&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;out&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;println&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Actually we just made &lt;code&gt;IntegrationFlow&lt;/code&gt; a functional interface with a single method 
+&lt;code&gt;define(IntegrationFlowDefinition&amp;lt;?&amp;gt; flow)&lt;/code&gt; and the &lt;code&gt;IntegrationFlowBeanPostProcessor&lt;/code&gt; just converts that 'fake' bean
+to the real &lt;code&gt;StandardIntegrationFlow&lt;/code&gt; based on implicit &lt;code&gt;IntegrationFlowBuilder&lt;/code&gt;. The only limitation is with such a 
+definition, that it is based on an implicit &lt;code&gt;DirectChannel&lt;/code&gt; with &lt;code&gt;lambdaFlow.input&lt;/code&gt; bean name. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Protocol-specific Adapters&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;With this Milestone, several new protocol-specific &lt;code&gt;Namespace factories&lt;/code&gt; have been introduced: &lt;code&gt;Files&lt;/code&gt;, 
+&lt;code&gt;(S)Ftp&lt;/code&gt; and &lt;code&gt;Mail&lt;/code&gt;. Some simple samples of their usage:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Autowired&lt;/span&gt;
+&lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="n"&gt;DefaultFtpSessionFactory&lt;/span&gt; &lt;span class="n"&gt;ftpSessionFactory&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+
+&lt;span class="nd"&gt;@Bean&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;IntegrationFlow&lt;/span&gt; &lt;span class="nf"&gt;ftpInboundFlow&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;IntegrationFlows&lt;/span&gt;
+               &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;from&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Ftp&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;inboundAdapter&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;ftpSessionFactory&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+                        &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;preserveTimestamp&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+                        &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;remoteDirectory&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"ftpSource"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+                        &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;regexFilter&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;".*\\.txt$"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+                        &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;localFilenameGeneratorExpression&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"#this.toUpperCase() + '.a'"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+                        &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;localDirectory&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;File&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"tmp"&lt;/span&gt;&lt;span class="o"&gt;)),&lt;/span&gt;
+                      &lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;id&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"ftpInboundAdapter"&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
+               &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;channel&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;MessageChannels&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;queue&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"ftpInboundResultChannel"&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
+               &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;get&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="nd"&gt;@Bean&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;IntegrationFlow&lt;/span&gt; &lt;span class="nf"&gt;tailFlow&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;IntegrationFlows&lt;/span&gt;
+            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;from&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Files&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;tailAdapter&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;File&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;tmpDir&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"TailTest"&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
+                    &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;delay&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+                    &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;end&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
+            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;channel&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;MessageChannels&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;queue&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"tailChannel"&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
+            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;get&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="nd"&gt;@Bean&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;IntegrationFlow&lt;/span&gt; &lt;span class="nf"&gt;imapIdleFlow&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="kd"&gt;throws&lt;/span&gt; &lt;span class="n"&gt;AddressException&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;IntegrationFlows&lt;/span&gt;
+            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;from&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Mail&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;imapIdleAdapter&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"imap://user:pw@imap.gmail.com:993/INBOX"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+                    &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;searchTermStrategy&lt;/span&gt;&lt;span class="o"&gt;((&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
+                            &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;AndTerm&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;FromTerm&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;InternetAddress&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"bar@baz"&lt;/span&gt;&lt;span class="o"&gt;)),&lt;/span&gt; 
+                                        &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;FlagTerm&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;Flags&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Flags&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Flag&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;SEEN&lt;/span&gt;&lt;span class="o"&gt;),&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="o"&gt;)))&lt;/span&gt;
+                    &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;javaMailProperties&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;p&lt;/span&gt;
+                            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;put&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"mail.debug"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"true"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+                            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;put&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"mail.imap.connectionpoolsize"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"5"&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
+                    &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;shouldReconnectAutomatically&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
+            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;enrichHeaders&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;headerExpressions&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;
+                            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;put&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;MailHeaders&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;SUBJECT&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"payload.subject"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+                            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;put&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;MailHeaders&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;FROM&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"payload.from[0].toString()"&lt;/span&gt;&lt;span class="o"&gt;)))&lt;/span&gt;
+            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;channel&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;MessageChannels&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;queue&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"imapIdleChannel"&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
+            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;get&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Support additions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As you could notice in the last &lt;code&gt;IMAP&lt;/code&gt; sample the &lt;code&gt;.javaMailProperties()&lt;/code&gt; and &lt;code&gt;.enrichHeaders()&lt;/code&gt; have fluent syntax
+to specify &lt;code&gt;Properties&lt;/code&gt; and &lt;code&gt;Map&amp;lt;String, String&amp;gt;&lt;/code&gt; as inline objects. Unfortunately, Java doesn't provide a &lt;code&gt;Builder&lt;/code&gt; API
+for those simple classes, hence we do that for you and provide functional interfaces to build &lt;code&gt;Properties&lt;/code&gt; and &lt;code&gt;Map&lt;/code&gt;
+from Lambdas. For example, the &lt;code&gt;Mail.headers()&lt;/code&gt; provides a &lt;code&gt;MailHeadersBuilder&lt;/code&gt; - an extension of &lt;code&gt;MapBuilder&lt;/code&gt;, 
+which can be used in the &lt;code&gt;.enrichHeaders()&lt;/code&gt; as well:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Bean&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;IntegrationFlow&lt;/span&gt; &lt;span class="nf"&gt;sendMailFlow&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;enrichHeaders&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Mail&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;headers&lt;/span&gt;&lt;span class="o"&gt;().&lt;/span&gt;&lt;span class="na"&gt;subject&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"foo"&lt;/span&gt;&lt;span class="o"&gt;).&lt;/span&gt;&lt;span class="na"&gt;from&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"foo@bar"&lt;/span&gt;&lt;span class="o"&gt;).&lt;/span&gt;&lt;span class="na"&gt;to&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"bar@baz"&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
+                 &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;handle&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Mail&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;outboundAdapter&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"smtp.gmail.com"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+                            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;credentials&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"user"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"pw"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+                            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;protocol&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"smtp"&lt;/span&gt;&lt;span class="o"&gt;)));&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Of course, this is an equivalent of &lt;code&gt;&amp;lt;int-mail:header-enricher&amp;gt;&lt;/code&gt; from XML configuration.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wrapping up&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You can obtain more information about these and existing classes from their 
+&lt;a href="https://github.com/spring-projects/spring-integration-extensions/tree/master/spring-integration-java-dsl"&gt;source code&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We look forward to your comments and feedback (&lt;a href="http://stackoverflow.com"&gt;StackOverflow&lt;/a&gt; (&lt;code&gt;spring-integration&lt;/code&gt; tag), 
+&lt;a href="https://jira.spring.io/browse/INTEXT"&gt;Spring JIRA&lt;/a&gt;, &lt;a href="https://github.com/spring-projects/spring-integration-extensions/issues"&gt;GitHub&lt;/a&gt;)
+as soon as possible and report issues you find before we GA towards over a couple months.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SpringOne 2GX 2014&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Some of those mentioned topics are being covered at SpringOne &lt;em&gt;tomorrow&lt;/em&gt;. Please attend &lt;a href="https://2014.event.springone2gx.com/schedule/sessions/spring_integration_java_configuration_and_more.html"&gt;Gary Russell's Session&lt;/a&gt; 
+to learn more about these and other Spring Integration improvements added in the last 12 months.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring IO Platform 1.0.2 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/07/spring-io-platform-1-0-2-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Andy Wilkinson</name>
+    </author>
+    <id>tag:spring.io,2014-09-07:1753</id>
+    <updated>2014-09-07T17:56:25Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce the latest maintenance release of Spring IO Platform is now available from both &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3Aio.spring.platform"&gt;Maven Central&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;This release upgrades the versions of a number of the projects in the Platform to pick up their latest maintenance releases:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Reactor 1.1.4&lt;/li&gt;
+&lt;li&gt;Reactor Spring 1.1.3&lt;/li&gt;
+&lt;li&gt;Spring AMQP 1.3.6&lt;/li&gt;
+&lt;li&gt;Spring Boot 1.1.6&lt;/li&gt;
+&lt;li&gt;Spring Data Dijkstra SR4&lt;/li&gt;
+&lt;li&gt;Spring Framework 4.0.7&lt;/li&gt;
+&lt;li&gt;Spring Integration 4.0.4&lt;/li&gt;
+&lt;li&gt;Spring Security 3.2.5&lt;/li&gt;
+&lt;li&gt;Spring Security OAuth 2.0.3&lt;/li&gt;
+&lt;li&gt;Spring Web Flow 2.4.1&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;The versions of many third-party dependencies have also been updated.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://platform.spring.io/platform"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-io/platform/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/platform/docs/1.0.2.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Join us at the Spring Data birds-of-a-feather session @springone2gx #s2gx</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/05/join-us-at-the-spring-data-birds-of-a-feather-session-springone2gx-s2gx" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Greg Turnquist</name>
+    </author>
+    <id>tag:spring.io,2014-09-04:1749</id>
+    <updated>2014-09-05T19:45:50Z</updated>
+    <content type="html">&lt;p&gt;Are you ready for &lt;a href="http://springone2gx.com"&gt;SpringOne&lt;/a&gt;? It's almost here!&lt;/p&gt;
+
+&lt;p&gt;A popular part of SpringOne are the birds-of-a-feather sessions. Different groups get together to talk about different aspects of Spring, Groovy, and Grails. This year, they are scheduled for Tuesday night, September 9th, starting at 9pm. (When do they end? When everyone finally leaves!) &lt;/p&gt;
+
+&lt;p&gt;They are indeed popular. Last year I sat in on the Spring Framework one and enjoyed the close, unscripted discussions (not lectures). You should think about carving out some time for that!&lt;/p&gt;
+
+&lt;p&gt;This year, we have a new session planned: &lt;strong&gt;Spring Data&lt;/strong&gt;. &lt;/p&gt;
+
+&lt;p&gt;If you aren't aware, the Spring Data release train has now grown to include eleven modules: Commons, JPA, MongoDB, Neo4j, Solr, Couchbase, Cassandra, Elasticsearch, Gemfire, Redis, and REST. Whew, that's a lot!&lt;/p&gt;
+
+&lt;p&gt;Spring Data has grown in popularity throughout the community. If you're interested in chatting with some of the project leads (can't guarantee they will ALL be this session) as well as other members of the Spring Data community, plan some time to join us!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; It's not too late! Hurry up and &lt;a href="https://2014.event.springone2gx.com/register"&gt;register today&lt;/a&gt;!&lt;/p&gt;
+&lt;/blockquote&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring AMQP (for Java) 1.4 Milestone 1 Available</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/05/spring-amqp-for-java-1-4-milestone-1-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Gary Russell</name>
+    </author>
+    <id>tag:spring.io,2014-09-04:1750</id>
+    <updated>2014-09-05T16:08:00Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce that the first milestone of Spring AMQP 1.4 is now available.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;a name="user-content-key-features" class="anchor" href="#key-features" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Key Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Annotation-based message listeners (&lt;code&gt;@RabbitListener&lt;/code&gt;), enabled with either &lt;code&gt;@EnableRabbit&lt;/code&gt; or &lt;code&gt;&amp;lt;rabbit:annotation-driven /&amp;gt;&lt;/code&gt; (see below for an example).&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;RabbitMessagingTemplate&lt;/code&gt; allowing interaction with &lt;code&gt;RabbitMQ&lt;/code&gt; using &lt;code&gt;spring-messaging&lt;/code&gt; &lt;code&gt;Message&lt;/code&gt; objects.&lt;/li&gt;
+&lt;li&gt;A new factory bean to ease the configuration of SSL with the &lt;code&gt;RabbitConnectionFactory&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;Log4j Appender now supports configuration of message persistence.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Here is a simple example for a POJO service using the new annotations:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;MyService&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@RabbitListener&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;queues&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"fooQ"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;capitalize&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;foo&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;foo&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;toUpperCase&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="nd"&gt;@Configuration&lt;/span&gt;
+&lt;span class="nd"&gt;@EnableRabbit&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;EnableRabbitConfig&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@Bean&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;SimpleRabbitListenerContainerFactory&lt;/span&gt; &lt;span class="nf"&gt;rabbitListenerContainerFactory&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;SimpleRabbitListenerContainerFactory&lt;/span&gt; &lt;span class="n"&gt;factory&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;SimpleRabbitListenerContainerFactory&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+        &lt;span class="n"&gt;factory&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;setConnectionFactory&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;rabbitConnectionFactory&lt;/span&gt;&lt;span class="o"&gt;());&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;factory&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@Bean&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;MyService&lt;/span&gt; &lt;span class="nf"&gt;myService&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;MyService&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+    &lt;span class="c1"&gt;// Rabbit infrastructure setup&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@Bean&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;ConnectionFactory&lt;/span&gt; &lt;span class="nf"&gt;rabbitConnectionFactory&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;CachingConnectionFactory&lt;/span&gt; &lt;span class="n"&gt;connectionFactory&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;CachingConnectionFactory&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+        &lt;span class="n"&gt;connectionFactory&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;setHost&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"localhost"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;connectionFactory&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;See the &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10450&amp;amp;version=14522"&gt;Release Notes&lt;/a&gt; and the &lt;a href="http://projects.spring.io/spring-amqp/"&gt;Project Page&lt;/a&gt; for more information.&lt;/p&gt;
+
+&lt;p&gt;A minor &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10450&amp;amp;version=14640"&gt;1.3.6 Maintenance Release&lt;/a&gt; is also available.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Integration 4.1 Milestone 1 Available</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/05/spring-integration-4-1-milestone-1-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Artem Bilan</name>
+    </author>
+    <id>tag:spring.io,2014-09-05:1752</id>
+    <updated>2014-09-05T10:01:00Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;
+
+&lt;p&gt;We are pleased to announce that Spring Integration 4.1 Milestone 
+1 has been released. Please use the &lt;a href="http://repo.springsource.org/milestone"&gt;Milestone Repository&lt;/a&gt; with Maven or Gradle,
+download a 
+&lt;a href="http://repo.spring.io/milestone/org/springframework/integration/spring-integration/4.1.0.M1"&gt;distribution archive&lt;/a&gt;,
+or see the project &lt;a href="http://projects.spring.io/spring-integration"&gt;home page&lt;/a&gt; for links to the updated documentation, 
+and Maven/Gradle configuration details.&lt;/p&gt;
+
+&lt;p&gt;The release includes some new features and further improvements, as well as a number of bug fixes, with the GA release due 
+around the end of October.&lt;/p&gt;
+
+&lt;p&gt;Here is a summary of major changes:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Spring Framework 4.1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Spring Integration takes advantage of a number of new features in Spring Framework 4.1 and requires that release.&lt;/p&gt;
+
+&lt;p&gt;The changes include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;migration of additional Spring Integration APIs to the Core Spring Messaging module and the Spring Integration equivalents are deprecated&lt;br&gt;
+or removed to avoid confusion in the target applications;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;a number of Messaging performance improvements have been included in Spring Framework 4.1.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Spring Framework 4.1 introduced the &lt;a href="http://docs.spring%0A.io/spring/docs/current/spring-framework-reference/html/expressions.html#expressions-spel-compilation"&gt;SpEL Compiler&lt;/a&gt;. 
+It is very useful for Spring Integration, which extensively uses SpEL at runtime. You can enable the SpEL Compiler using the 
+&lt;code&gt;spring.expression.compiler.mode&lt;/code&gt; System Property with a value of &lt;code&gt;IMMEDIATE&lt;/code&gt; or &lt;code&gt;MIXED&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;WebSocket Adapters&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;WebSocket Inbound and Outbound Channel Adapters have been introduced. They are built on the Spring WebSocket 
+and Messaging foundation.&lt;/p&gt;
+
+&lt;p&gt;One of the key feature of WebSockets that it is a &lt;code&gt;streaming&lt;/code&gt; protocol and from Java perspective it is based on the 
+same API as from server side as well as from client side, so, we can build integration flows using similar components
+on both sides:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Server side&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Configuration&lt;/span&gt;
+&lt;span class="nd"&gt;@EnableIntegration&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;ServerConfig&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@Bean&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;ServerWebSocketContainer&lt;/span&gt; &lt;span class="nf"&gt;serverWebSocketContainer&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;ServerWebSocketContainer&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"/ws"&lt;/span&gt;&lt;span class="o"&gt;).&lt;/span&gt;&lt;span class="na"&gt;withSockJs&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@Bean&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;MessageProducer&lt;/span&gt; &lt;span class="nf"&gt;webSocketInboundChannelAdapter&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;WebSocketInboundChannelAdapter&lt;/span&gt; &lt;span class="n"&gt;webSocketInboundChannelAdapter&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 
+                    &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;WebSocketInboundChannelAdapter&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;serverWebSocketContainer&lt;/span&gt;&lt;span class="o"&gt;());&lt;/span&gt;
+        &lt;span class="n"&gt;webSocketInboundChannelAdapter&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;setOutputChannel&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;webSocketInputChannel&lt;/span&gt;&lt;span class="o"&gt;());&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;webSocketInboundChannelAdapter&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@Bean&lt;/span&gt;
+    &lt;span class="nd"&gt;@Transformer&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;inputChannel&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"webSocketInputChannel"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;outputChannel&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"webSocketOutputChannel"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;ExpressionEvaluatingTransformer&lt;/span&gt; &lt;span class="nf"&gt;transformer&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;ExpressionEvaluatingTransformer&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PARSER&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;parseExpression&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"'Hello ' + payload"&lt;/span&gt;&lt;span class="o"&gt;));&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@Bean&lt;/span&gt;
+    &lt;span class="nd"&gt;@ServiceActivator&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;inputChannel&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"webSocketOutputChannel"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;MessageHandler&lt;/span&gt; &lt;span class="nf"&gt;webSocketOutboundMessageHandler&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;WebSocketOutboundMessageHandler&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;serverWebSocketContainer&lt;/span&gt;&lt;span class="o"&gt;());&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Client side&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Configuration&lt;/span&gt;
+&lt;span class="nd"&gt;@EnableIntegration&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;ClientConfig&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="nd"&gt;@Bean&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;WebSocketClient&lt;/span&gt; &lt;span class="nf"&gt;webSocketClient&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;SockJsClient&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Collections&lt;/span&gt;&lt;span class="o"&gt;.&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Transport&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;singletonList&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;
+                        &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;WebSocketTransport&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;JettyWebSocketClient&lt;/span&gt;&lt;span class="o"&gt;())));&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@Bean&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;IntegrationWebSocketContainer&lt;/span&gt; &lt;span class="nf"&gt;clientWebSocketContainer&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;ClientWebSocketContainer&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;webSocketClient&lt;/span&gt;&lt;span class="o"&gt;(),&lt;/span&gt; &lt;span class="s"&gt;"ws://host:port/ws"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@Bean&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;MessageProducer&lt;/span&gt; &lt;span class="nf"&gt;webSocketInboundChannelAdapter&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;WebSocketInboundChannelAdapter&lt;/span&gt; &lt;span class="n"&gt;webSocketInboundChannelAdapter&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+                &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;WebSocketInboundChannelAdapter&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;clientWebSocketContainer&lt;/span&gt;&lt;span class="o"&gt;());&lt;/span&gt;
+        &lt;span class="n"&gt;webSocketInboundChannelAdapter&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;setOutputChannel&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;webSocketInputChannel&lt;/span&gt;&lt;span class="o"&gt;());&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;webSocketInboundChannelAdapter&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@Bean&lt;/span&gt;
+    &lt;span class="nd"&gt;@ServiceActivator&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;inputChannel&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"webSocketOutputChannel"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;MessageHandler&lt;/span&gt; &lt;span class="nf"&gt;webSocketOutboundMessageHandler&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;WebSocketOutboundMessageHandler&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;clientWebSocketContainer&lt;/span&gt;&lt;span class="o"&gt;());&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Another simple way to integrate with Spring WebSockets and STOMP sub-protocol but use integration flows
+to process requests and send responses is based on &lt;code&gt;@MessageMapping&lt;/code&gt; annotation, 
+but on the &lt;code&gt;@MessagingGateway&lt;/code&gt; interface:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@MessagingGateway&lt;/span&gt;
+&lt;span class="nd"&gt;@Controller&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;WebSocketGateway&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@MessageMapping&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"/greeting"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="nd"&gt;@SendToUser&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"/queue/answer"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="nd"&gt;@Gateway&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;requestChannel&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"greetingChannel"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;greeting&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;payload&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Reactor support&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;Promise&amp;lt;?&amp;gt;&lt;/code&gt; Gateway has been added to support &lt;a href="https://github.com/reactor/reactor/wiki"&gt;Project Reactor&lt;/a&gt;.
+Now Spring Integration message flows can be used as a part of &lt;code&gt;Reactive Streams&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@MessagingGateway&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;reactorEnvironment&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"reactorEnv"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;PromiseGateway&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@Gateway&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;requestChannel&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"promiseChannel"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;Promise&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Integer&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;multiply&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Integer&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+        &lt;span class="o"&gt;...&lt;/span&gt;
+
+&lt;span class="nd"&gt;@ServiceActivator&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;inputChannel&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"promiseChannel"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;Integer&lt;/span&gt; &lt;span class="nf"&gt;multiply&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Integer&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+        &lt;span class="o"&gt;...&lt;/span&gt;
+
+&lt;span class="n"&gt;Streams&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;defer&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Arrays&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;asList&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"1"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"2"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"3"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"4"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"5"&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
+    &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;env&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;environment&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;get&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt;
+    &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;map&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nl"&gt;Integer:&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;parseInt&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;mapMany&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;integer&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;promiseGateway&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;multiply&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;integer&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
+    &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;collect&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt;
+    &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;consume&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;integers&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;...)&lt;/span&gt;
+    &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;flush&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;In addition, support of Spring Framework &lt;code&gt;ListenableFuture&amp;lt;?&amp;gt;&lt;/code&gt; gateway method return types has been added.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Boon JSON mapper&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href="https://github.com/RichardHightower/boon/wiki"&gt;Boon&lt;/a&gt; &lt;code&gt;JsonObjectMapper&lt;/code&gt; implementation has been added for the 
+JSON Transformers. Boon has been shown to have better JSON mapping performance than Jackson. It is enabled in Spring Integration 
+automatically by detection of its jar in the classpath. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Splitter Iterator&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;splitter&amp;gt;&lt;/code&gt;s now can return &lt;code&gt;Iterator&amp;lt;?&amp;gt;&lt;/code&gt; and &lt;code&gt;Iterable&amp;lt;?&amp;gt;&lt;/code&gt; as a &lt;code&gt;payload&lt;/code&gt; to achieve &lt;code&gt;streaming&lt;/code&gt; behaviour, 
+when each item is emitted as reply message using &lt;code&gt;Iterator.next()&lt;/code&gt;.  &lt;/p&gt;
+
+&lt;p&gt;In addition we have released two maintenance versions 
+&lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10121&amp;amp;version=14666"&gt;3.0.5&lt;/a&gt; and 
+&lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10121&amp;amp;version=14665"&gt;4.0.4&lt;/a&gt;. 
+It's strongly recommended to upgrade to the latest versions as they include some critical fixes.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wrapping up&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;For a complete list of changes refer to the 
+&lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10121&amp;amp;version=14513"&gt;release notes&lt;/a&gt;,
+&lt;a href="http://docs.spring.io/spring-integration/docs/4.1.0.M1/reference/html/whats-new.html"&gt;What's New&lt;/a&gt; and
+&lt;a href="http://docs.spring.io/spring-integration/docs/4.1.0.M1/api"&gt;Java Docs&lt;/a&gt; of the new components.&lt;/p&gt;
+
+&lt;p&gt;Don't miss, of course, the 
+&lt;a href="https://github.com/spring-projects/spring-integration/wiki/Spring-Integration-4.0-to-4.1-Migration-Guide"&gt;Migration Guild&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We look forward to your comments and feedback (&lt;a href="http://stackoverflow.com"&gt;StackOverflow&lt;/a&gt; (&lt;code&gt;spring-integration&lt;/code&gt; tag), 
+&lt;a href="https://jira.spring.io/browse/INT"&gt;Spring JIRA&lt;/a&gt;)
+as soon as possible and report issues you find before we GA towards over a couple months.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SpringOne 2GX 2014&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Some of those mentioned topics are being covered at SpringOne next week. Please attend &lt;a href="https://2014.event.springone2gx.com/schedule/sessions/spring_integration_java_configuration_and_more.html"&gt;Gary Russell's Session&lt;/a&gt; 
+to learn more about these and other Spring Integration improvements added in the last 12 months.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Boot 1.1.6 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/05/spring-boot-1-1-6-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Phil Webb</name>
+    </author>
+    <id>tag:spring.io,2014-09-05:1751</id>
+    <updated>2014-09-05T04:22:21Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce that Spring Boot 1.1.6 has been released and is available from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;This release closes almost 50 reported issues and is a recommended upgrade for all Spring Boot users. For a complete list of changes please refer to the &lt;a href="https://github.com/spring-projects/spring-boot/issues?q=milestone%3A1.1.6"&gt;issue tracker&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/1.1.6.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Framework 4.1 GA is here!</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/04/spring-framework-4-1-ga-is-here" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Juergen Hoeller</name>
+    </author>
+    <id>tag:spring.io,2014-09-04:1748</id>
+    <updated>2014-09-04T12:55:00Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;
+
+&lt;p&gt;I'm pleased to announce that after an intense release candidate phase, the Spring Framework 4.1 GA release is now available!&lt;/p&gt;
+
+&lt;p&gt;Our 4.1 generation delivers &lt;b&gt;major new features along several themes:&lt;/b&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Annotated JMS listener methods&lt;/li&gt;
+&lt;li&gt;Comprehensive support for JCache (JSR-107) annotations&lt;/li&gt;
+&lt;li&gt;Flexible resolution and transformation of static web resources&lt;/li&gt;
+&lt;li&gt;MVC views: declarative resolution, Groovy markup templates, Jackson's JsonView&lt;/li&gt;
+&lt;li&gt;WebSocket refinements: WebSocket scope, SockJS client support, WebSocket stats&lt;/li&gt;
+&lt;li&gt;Performance: SpEL compiler mode, concurrency fine-tuning across the container&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;And as always, 4.1 also comes with &lt;b&gt;a lot of enhancements in the details&lt;/b&gt;, for example:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Direct field binding support with auto-growing for nested fields&lt;/li&gt;
+&lt;li&gt;Java 8's Optional for injection points and MVC handler parameters&lt;/li&gt;
+&lt;li&gt;Support for the standard @Priority annotation for dependency ordering and selection&lt;/li&gt;
+&lt;li&gt;Annotated @Lookup methods with support for provided constructor arguments&lt;/li&gt;
+&lt;li&gt;Declarative SQL scripts and programmatic transactions in the TestContext framework&lt;/li&gt;
+&lt;li&gt;Enhanced Hibernate JPA setup: isolation levels, discovery of managed packages&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Many of those topics have been covered in recent blog posts already and will also be prominently featured at our &lt;b&gt;&lt;a href="http://www.springone2gx.com/"&gt;SpringOne2GX 2014&lt;/a&gt; show in Dallas next week!&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;We recommend an early upgrade since the 4.1 line is the primary maintenance branch now, immediately superseding the 4.0.x line. For a more conservative upgrade path, we have co-released 4.0.7 with 4.1 GA - as an intermediate step on your way to 4.1 proper.&lt;/p&gt;
+
+&lt;p&gt;Note that Spring Framework 4.1 does not raise the fundamental system requirements: It is still &lt;b&gt;Java 6+, Servlet 2.5+, JPA 2.0+&lt;/b&gt; as outlined for the original Spring Framework 4.0 release, which means it happily runs even on WebSphere 7!&lt;/p&gt;
+
+&lt;p&gt;Cheers,&lt;/p&gt;
+
+&lt;p&gt;Juergen&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - September 2nd, 2014</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/03/this-week-in-spring-september-2nd-2014" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2014-09-03:1747</id>
+    <updated>2014-09-03T05:24:12Z</updated>
+    <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! &lt;/p&gt;
+
+&lt;p&gt;This is the last installment of &lt;em&gt;TWiS&lt;/em&gt; before &lt;a href="http://springone2gx.com/"&gt;SpringOne2GX 2014&lt;/a&gt; kicks off next week! I, personally, am &lt;em&gt;very&lt;/em&gt; excited! I can't wait to see you all there. This is going to be so much fun. So, let's get on to it!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Spring Data lead Oliver Gierke has just &lt;a href="https://spring.io/blog/2014/08/27/spring-data-dijkstra-sr4-released"&gt;announced the release of Spring Data Dijkstra SR4&lt;/a&gt;, filled with bug-fixes and all sorts of upgrade-now-worthy stuff. Check it out! &lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://spring.io/blog/2014/08/28/spring-tool-suite-and-groovy-grails-tool-suite-3-6-1-released"&gt;Spring and Groovy &amp;amp; Grails Tool Suite lead Martin Lippert just announced 3.6.1&lt;/a&gt;.  The new release updates tcServer to 3.0.0, includes build performance improvements, annotation processors for AspectJ and AJDT, and more. Download now, and have the latest and greatest IDE to follow along &lt;a href="http://spring.io/guides"&gt;all the guides&lt;/a&gt; and follow the &lt;a href="http://springone2gx.com"&gt;examples at SpringOne2GX 2014&lt;/a&gt;! &lt;/li&gt;
+&lt;li&gt;I hope you'll &lt;a href="https://spring.io/blog/2014/07/29/webinar-microservices-with-spring-boot-sept-16th"&gt; join me September 16th for a webinar looking at building microservices with Spring&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;On September 23rd, join Joram Barrez and I for a webinar looking at &lt;a href="https://spring.io/blog/2014/07/29/webinar-process-driven-spring-applications-with-activiti-sept-23rd"&gt;how to build process-centric Spring applications with the open-source BPMN2 engine, Activiti&lt;/a&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;Did you see the &lt;a href="http://start.spring.io/"&gt;beautiful, more intuitive, new Spring Initializr&lt;/a&gt;?? Preetttyyyyyy...&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;The sleepless &lt;a href="https://spring.io/blog/2014/09/01/spring-security-oauth-2-0-3-available-now"&gt;Dr. Syer has just released Spring Security OAuth 2.0.3&lt;/a&gt;, which includes a mainly bug fix   for JWT tokens. Also, resource servers (if configured with &lt;code&gt;@Configuration&lt;/code&gt;) will check the validty of the client and scopes before allowing access to protected resources, which means more instantaneous client privilege revocation. Nice!&lt;/li&gt;
+&lt;li&gt;Spring ninja Greg Turnquist has written a nice post &lt;a href="https://spring.io/blog/2014/09/02/spring-guides-make-it-easier-to-jump-to-core-content"&gt;about the ever improving Spring IO guides&lt;/a&gt;. Start there, then continue on to some of the guides themselves! &lt;/li&gt;
+&lt;li&gt;I gave a presentation, &lt;em&gt;Have You Seen Spring Lately?&lt;/em&gt;, at DevNexus earlier this year. &lt;a href="http://www.infoq.com/presentations/spring-rest-nosql-big-data-mobile"&gt;It's online&lt;/a&gt;, and worth a watch if you haven't already! (If I may say so..)&lt;/li&gt;
+&lt;li&gt;Lieven Doclo has put together a &lt;em&gt;very&lt;/em&gt; cool post on his &lt;a href="http://java.dzone.com/articles/another-spring-boot"&gt;Spring Boot auto-configuration for the Axon framework&lt;/a&gt;. Axon is an implementation of the CQRS (Command and Query Responsibility Segregation) pattern. (Axon is built on Spring, Spring Integration, and more, as readers of this column will know from previous roundups!)&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;MacAdie Web Blog has a rough, but very useful, recap of &lt;a href="http://www.macadie.net/2014/08/26/spring-boot-presentation-at-austingug/"&gt;notes taken at an  Austin Groovy and Grails User Group meeting on Spring Boot&lt;/a&gt;. &lt;/li&gt;
+&lt;li&gt;  I liked Ralph Wehner's post &lt;a href="http://rwehner.wordpress.com/2014/08/26/combining-vaadin-and-classic-spring-mvc-into-one-simple-spring-boot-application/"&gt;introducing how to use Spring Boot and Vaadin together&lt;/a&gt;: it explains everything &lt;a href="http://github.com/rwe17/spring-boot-vaadin-demo"&gt;and even links to a sample example&lt;/a&gt; - awesome!&lt;/li&gt;
+&lt;li&gt; Our pals at the Jayway blog are back at it again! This week, &lt;a href="http://www.jayway.com/2014/07/22/spring-boot-custom-healthindicator/"&gt;they've introduced how to build a custom Spring Boot &lt;code&gt;HealthIndicator&lt;/code&gt;s&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;IT Hood&lt;/code&gt; chimes in with a helpful hint: if you're getting mysterious errors like &lt;a href="http://ithood.blogspot.com/2014/08/java-spring-mvc-networkerror-406-not.html"&gt;HTTP status code &lt;code&gt;406 Not Acceptable&lt;/code&gt; results when calling a Spring MVC-powered REST endpoint, you might check that you have the right dependencies on the CLASSPATH&lt;/a&gt;. Simple, but easy to forget! (unless, of course, you're using the &lt;a href="https://spring.io/blog/2014/06/26/introducing-the-spring-io-platform"&gt;Spring IO Platform BOM&lt;/a&gt; or &lt;a href="http://start.spring.io/"&gt;Spring Boot's starter dependencies&lt;/a&gt;!).&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring guides make it easier to jump to core content</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/02/spring-guides-make-it-easier-to-jump-to-core-content" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Greg Turnquist</name>
+    </author>
+    <id>tag:spring.io,2014-09-02:1746</id>
+    <updated>2014-09-02T20:01:00Z</updated>
+    <content type="html">&lt;p&gt;If you remember last year, we rolled out a &lt;a href="http://spring.io/blog/2013/10/23/the-spring-io-site"&gt;powerful new website&lt;/a&gt; built top-to-bottom with Spring. It was fresh, new, and loaded with gobs of &lt;a href="http://spring.io/guides"&gt;getting started guides&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since then, the feedback has been overwhelmingly positive. We've had record traffic with a large portion visiting the guides. So what's new?&lt;/p&gt;
+
+&lt;p&gt;We recently added the ability to hide/show the build steps. Many people expressed the desire to skip project setup steps and instead jump to the core content. We listened and responded.&lt;/p&gt;
+
+&lt;p&gt;After reading over a guide, do you need Gradle or Maven build steps? No problem! Just click on the appropriate header, and the steps will expand and show you the extra bits. To top it off, the website uses HTML local storage to remember the choice you made. Surf to another guide and you'll see the same perspective. &lt;/p&gt;
+
+&lt;p&gt;Hopefully, this slims things down to your preference.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Security OAuth 2.0.3 Available Now</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/09/01/spring-security-oauth-2-0-3-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Dave Syer</name>
+    </author>
+    <id>tag:spring.io,2014-09-01:1745</id>
+    <updated>2014-09-01T07:39:00Z</updated>
+    <content type="html">&lt;p&gt;Spring Security OAuth 2.0.3 is available now in all the usual Maven repositories. It's a bug fix release, nothing major, so upgrading from 2.0.x should be painless (and is recommended). Some people were having issues getting JWT tokens to work properly, and those should be fixed. The only noteworthy functional change is that Resource Servers (if configured with &lt;code&gt;@Configuration&lt;/code&gt;) will now check the validity of the client and scopes before allowing access to protected resources. This means that client privileges can be revoked quickly, but may also lead to a performance penalty (so caching the &lt;code&gt;ClientDetailsService&lt;/code&gt; results would be recommended).&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tool Suite and Groovy/Grails Tool Suite 3.6.1 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/08/28/spring-tool-suite-and-groovy-grails-tool-suite-3-6-1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2014-08-28:1744</id>
+    <updated>2014-08-28T08:29:57Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+
+&lt;p&gt;I am happy to announce the new release of our Eclipse-based tooling today:
+The Spring Tool Suite (STS) 3.6.1 and the Groovy/Grails Tool Suite (GGTS) 3.6.1.&lt;/p&gt;
+
+&lt;p&gt;Highlights from this release include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;updated to tc Server 3.0.0&lt;/li&gt;
+&lt;li&gt;performance improvements for building Spring projects&lt;/li&gt;
+&lt;li&gt;AspectJ/AJDT now support annotation processors&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;To download the distributions, please go visit:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Spring Tool Suite: &lt;a href="https://spring.io/tools/sts/all"&gt;https://spring.io/tools/sts/all&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Groovy/Grails Tool Suite: &lt;a href="https://spring.io/tools/ggts/all"&gt;https://spring.io/tools/ggts/all&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Detailed new and noteworthy notes can be found here: &lt;a href="http://docs.spring.io/sts/nan/v361/NewAndNoteworthy.html"&gt;STS/GGTS 3.6.1 New &amp;amp; Noteworthy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;NOTE:
+Both tool suites ship on top of the latest Eclipse Luna 4.4 release as 64bit and 32bit based zip files only.
+There will be no native installers for STS/GGTS anymore.&lt;/p&gt;
+
+&lt;p&gt;With the 3.6.0 release we shifted towards a slightly changed release schedule, shipping minor releases more frequently. Therefore 3.6.2 is scheduled to ship already in October, shortly after the Eclipse Luna SR1 release, followed by 3.6.3 in early Dezember and 3.6.4 in early March 2015, shortly after the Eclipse Luna SR2 release.&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Data Dijkstra SR4 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/08/27/spring-data-dijkstra-sr4-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Oliver Gierke</name>
+    </author>
+    <id>tag:spring.io,2014-08-27:1743</id>
+    <updated>2014-08-27T11:33:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the Spring Data team I am pleased to announce the availability of the fourth service release of the &lt;a href="https://github.com/spring-projects/spring-data-commons/wiki/Release-Train-Dijkstra"&gt;Dijkstra release train&lt;/a&gt;. It includes &lt;a href="https://jira.spring.io/issues/?filter=14757"&gt;36 fixes&lt;/a&gt; overall for the following modules:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Spring Data Commons 1.8.4 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-commons/1.8.4.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.8.4.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.8.4.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/commons/docs/1.8.4.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data JPA 1.6.4 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-jpa/1.6.4.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.6.4.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.6.4.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/jpa/docs/1.6.4.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data MongoDB 1.5.4 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-mongodb/1.5.4.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.5.4.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.5.4.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/mongodb/docs/1.5.4.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Neo4j 3.1.4 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-neo4j/3.1.4.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/3.1.4.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/3.1.4.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/neo4j/docs/3.1.4.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Solr 1.2.4 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-solr/1.2.4.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/1.2.4.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/1.2.4.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/solr/docs/1.2.4.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Couchbase 1.1.4 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-couchbase/1.1.4.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/1.1.4.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/1.1.4.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/couchbase/docs/1.1.4.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Cassandra 1.0.4 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-cassandra/1.0.4.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.0.4.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.0.4.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/cassandra/docs/1.0.4.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Elasticsearch 1.0.4 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-elasticsearch/1.0.4.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/1.0.4.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/1.0.4.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/elasticsearch/docs/1.0.4.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Gemfire 1.4.4 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-gemfire/1.4.4.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.4.4.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.4.4.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/gemfire/docs/1.4.4.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data Redis 1.3.4 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-redis/1.3.4.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.3.4.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.3.4.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/redis/docs/1.3.4.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Spring Data REST 2.1.4 - &lt;a href="http://repo.spring.io/libs-release/org/springframework/data/spring-data-rest-webmvc/2.1.4.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.1.4.RELEASE/api"&gt;JavaDocs&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.1.4.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="http://docs.spring.io/spring-data/rest/docs/2.1.4.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;The release is a recommended upgrade for all Dijkstra users as it contains a few important bug fixes. The next release coming will be the final release of the upcoming release train Evans.&lt;/p&gt;
+
+&lt;p&gt;If you want to learn more about Spring Data, be sure to attend this year's SpringOne conference. The &lt;a href="https://2014.event.springone2gx.com/schedule/2014-09-09"&gt;schedule&lt;/a&gt; contains a lot of data-related talks to introduce you to the latest features we're going to ship with Evans.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - August 26th, 2014</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/08/26/this-week-in-spring-august-26th-2014" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2014-08-26:1742</id>
+    <updated>2014-08-26T02:48:00Z</updated>
+    <content type="html">&lt;p&gt;Holy cats! Can you believe how close we are to &lt;a href="http://springone2gx.com/"&gt;SpringOne2GX&lt;/a&gt;?   Last year we made a huge splash with the announcements of Spring Boot and Spring XD, both of which have recently hit 1.0 releases. I happen to know the next level looks like, and you're going to want to see it. Register now if you haven't already!  &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Spring ninja Greg Turnquist wanted to &lt;a href="https://spring.io/blog/2014/08/21/building-a-restful-quotation-service-with-spring"&gt;replace one of the services used in the guides with something more family-friendly and so stood up a bespoke substitute using Spring&lt;/a&gt;!   This is a really nice read, check it out!&lt;/li&gt;
+&lt;li&gt;I hope you'll &lt;a href="https://spring.io/blog/2014/07/29/webinar-microservices-with-spring-boot-sept-16th"&gt; join me September 16th for a webinar looking at building microservices with Spring&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;On September 23rd, join Joram Barrez and I for a webinar   looking at &lt;a href="https://spring.io/blog/2014/07/29/webinar-process-driven-spring-applications-with-activiti-sept-23rd"&gt;how to build process-centric Spring applications with the open-source BPMN2 engine, Activiti&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Patrick Grimard did a really nice job introducing &lt;a href="http://patrickgrimard.com/2014/08/14/how-to-build-a-spring-boot-application-using-intellij-idea/"&gt;how to build Spring Boot applications using IntelliJ IDEA&lt;/a&gt;. Pretty obvious, I hope, but it's nice to have it in one place. &lt;/li&gt;
+&lt;li&gt;The &lt;em&gt;GeekAbyte&lt;/em&gt;   shows &lt;a href="http://geekabyte.blogspot.sg/2014/08/how-to-inject-objects-into-spring-mvc.html"&gt; how to implement a &lt;code&gt;HandlerMethodArgumentResolver&lt;/code&gt; in other to resolve and inject objects into Spring MVC controllers&lt;/a&gt;. This is a &lt;em&gt;really&lt;/em&gt; powerful technique if you need it.&lt;/li&gt;
+&lt;li&gt;This looks interesting - a (Swiss?) German workshop on &lt;a href="http://techup.ch/1647/build-modern-web-apps-with-spring-io-and-angularjs"&gt;building modern web applications using Spring IO and Angular.js&lt;/a&gt;. I wish I could go! Check it out if you're in the area - I'd love to know how it went and if the recording and/or slides are going to be available.&lt;/li&gt;
+&lt;li&gt;Our pal  Tomasz Nurkiewicz is at it again, this &lt;a href="http://www.javacodegeeks.com/2014/08/url-shortener-service-in-42-lines-of-code-in-java-spring-boot-redis.html"&gt;time with a look on building a URL shortner ("the new  'Hello, world!' in the IoT/microservice/era world" - ha!) in 42 lines of code&lt;/a&gt;. So... go, check it out! &lt;/li&gt;
+&lt;li&gt;(Aforementioned Spring ninja) Greg Turnquist's writing a book on Spring Boot for PACKT, &lt;a href="http://blog.greglturnquist.com/2014/08/chapter-5-of-learning-springboot-almost-done.html"&gt;and he's just posted a summary of the latest chapter (on security) on his blog&lt;/a&gt;. This is exciting stuff - definitely intriguing, check it out! Rock on, Greg! (Did I mention he'll be &lt;a href="http://springone2gx.com/"&gt;at SpringOne2GX, too&lt;/a&gt;?)&lt;/li&gt;
+&lt;li&gt;Pankaj Kumar introduces &lt;a href="http://www.journaldev.com/4144/spring-data-mongodb-example-tutorial"&gt;a simple  Spring Data MongoDB example in this post&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;This (Japanese-language) post (appears) to  &lt;a href="http://code-examples-ja.hateblo.jp/entry/2014/08/23/Spring_Framework_Dependency_Injection(%E4%BE%9D%E5%AD%98%E6%80%A7%E6%B3%A8%E5%85%A5)%E3%81%A8%E3%81%AF"&gt;introduce basic dependency injection with Spring&lt;/a&gt;). Could do... &lt;/li&gt;
+&lt;li&gt;This (Portuguese-language) post introduces how to create &lt;a href="http://rodrigoportela.blog.br/2014/08/criando-um-securitycontext-para-testes-unitarios/"&gt;a Spring Security context in unit tests&lt;/a&gt;. This approach works, but readers should &lt;em&gt;definitely&lt;/em&gt; check out some of the cool stuff Spring Security lead &lt;a href="http://spring.io/team/rwinch"&gt;Rob Winch&lt;/a&gt; has &lt;a href="https://spring.io/blog/2014/05/23/preview-spring-security-test-web-security"&gt;been unveiling to support unit-testing secure applications recently&lt;/a&gt;...&lt;br&gt;
+&lt;/li&gt;
+&lt;li&gt;A few years ago I blogged about the amazing &lt;a href="https://spring.io/blog/2013/03/04/spring-at-china-scale-alibaba-group-alipay-taobao-and-tmall/"&gt;things the Alibaba group is doing to meet China-scale demand with Spring&lt;/a&gt;. They built an (open-source) framework called Dubbo (which sits on top of Spring), and this &lt;a href="http://www.kukujia.net/archives/389"&gt;(Mandarin-language) post has a (simple) example demonstrating its use&lt;/a&gt;. &lt;em&gt;Very&lt;/em&gt; cool!&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;I am personally &lt;em&gt;super&lt;/em&gt; excited to &lt;a href="http://springone2gx.com"&gt;see Greg, Rob, the rest of the Spring team, and of course all of you, at SpringOne2GX&lt;/a&gt;! Register now if you haven't! &lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Building a RESTful quotation service with Spring</title>
+    <link rel="alternate" href="https://spring.io/blog/2014/08/21/building-a-restful-quotation-service-with-spring" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Greg Turnquist</name>
+    </author>
+    <id>tag:spring.io,2014-08-20:1741</id>
+    <updated>2014-08-21T20:05:00Z</updated>
+    <content type="html">&lt;p&gt;I was recently made aware that a public API we were using for one of our guides contained objectionable material. After confirming this, I immediately responded that we would pick another source. Wishing to avoid such an issue in the future, I decided the best solution was to build our own RESTful quote service. So I decided to use the best tools to do so, the Spring stack, and was able to migrate the very next day.&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a name="user-content-picking-your-tools" class="anchor" href="#picking-your-tools" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Picking your tools&lt;/h3&gt;
+
+&lt;p&gt;To kick things off, I made a check list of what I knew would be the right tools for the job of creating a RESTful web service.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="http://projects.spring.io/spring-data-jpa/"&gt;Spring Data JPA&lt;/a&gt; - quickly pre-load, fetch, and potentially update content&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://projects.spring.io/spring-framework/"&gt;Spring MVC&lt;/a&gt; - solid REST support since Spring 3&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://projects.spring.io/spring-boot/"&gt;Spring Boot&lt;/a&gt; - create all the needed components with little to no effort&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://start.spring.io"&gt;http://start.spring.io&lt;/a&gt; - assemble a project by simply checking the desired items on a form&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;I quickly set aside the desire to add, delete, manage, or view the data through a web page. Instead, my focus was to serve up a fixed set of content with the exact same structure that the guide expected to consume.&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a name="user-content-picking-your-content" class="anchor" href="#picking-your-content" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Picking your content&lt;/h3&gt;
+
+&lt;p&gt;The original content for the guide was a series of "Chunk Norris" jokes. I like a good laugh. But when I revisited the public API, I saw that several of the jokes were a bit rancid. After a brief discussion with colleagues, the idea came up to cite historical quotes. I took that idea and bent it a little. I had recently collected quotes from various developers about Spring Boot for personal reasons, so I decided to use that as the curated content.&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a name="user-content-time-to-code" class="anchor" href="#time-to-code" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Time to code!&lt;/h3&gt;
+
+&lt;p&gt;To kick things off, I visited &lt;a href="http://start.spring.io"&gt;http://start.spring.io&lt;/a&gt;. This &lt;a href="https://github.com/spring-io/initializr"&gt;Spring Boot app&lt;/a&gt; lets you enter the details of your new project, pick the Java level, and select the Spring Boot starters you need. I used my checklist up above and created a new gradle-based project.&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a name="user-content-defining-your-domain" class="anchor" href="#defining-your-domain" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Defining your domain&lt;/h4&gt;
+
+&lt;p&gt;With the project unpacked and imported into my IDE, the first thing I did was copy the &lt;a href="http://spring.io/guides/gs/messaging-reactor/#initial"&gt;domain objects shown in the Reactor guide&lt;/a&gt;. This way, I could ensure that the data sent out by my REST service was correct. Since the POJOs in my &lt;em&gt;Quoters Incorporated&lt;/em&gt; app are almost identical, I won't post them here.&lt;/p&gt;
+
+&lt;p&gt;Then I created a Spring Data repository.&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;QuoteRepository&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;CrudRepository&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Quote&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Long&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This empty interface definition handles &lt;code&gt;Quote&lt;/code&gt; objects with an internal primary key of type &lt;code&gt;Long&lt;/code&gt;. By extending the Spring Data Commons &lt;code&gt;CrudRepository&lt;/code&gt;, it inherits a fistful of database operations we'll use later on.&lt;/p&gt;
+
+&lt;p&gt;Next step? Initialize some data. I created a &lt;code&gt;DatabaseLoader&lt;/code&gt; like this:&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@Service&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;DatabaseLoader&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+    &lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="kd"&gt;final&lt;/span&gt; &lt;span class="n"&gt;QuoteRepository&lt;/span&gt; &lt;span class="n"&gt;repository&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@Autowired&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="nf"&gt;DatabaseLoader&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;QuoteRepository&lt;/span&gt; &lt;span class="n"&gt;repository&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;repository&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;repository&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@PostConstruct&lt;/span&gt;
+    &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;init&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;repository&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;save&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;Quote&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Working with Spring Boot is like pair-programming with the Spring developers."&lt;/span&gt;&lt;span class="o"&gt;));&lt;/span&gt;
+        &lt;span class="c1"&gt;// more quotes...&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It's marked as a &lt;code&gt;@Service&lt;/code&gt; so it will be automatically picked up by &lt;code&gt;@ComponentScan&lt;/code&gt; when the app starts.&lt;/li&gt;
+&lt;li&gt;It uses constructor injection with auto-wiring to ensure a copy of the &lt;code&gt;QuoteRepository&lt;/code&gt; is made available.&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;@PostConstruct&lt;/code&gt; tells Spring MVC to run the data loading method after all beans have been created.&lt;/li&gt;
+&lt;li&gt;Finally, the &lt;code&gt;init()&lt;/code&gt; method uses Spring Data JPA to create a whole slew of quotations.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Because I have H2 as my database of choice (&lt;strong&gt;com.h2database:h2&lt;/strong&gt;) in &lt;code&gt;build.gradle&lt;/code&gt;, there is no database set up at all (thanks to Spring Boot).&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a name="user-content-creating-a-controller" class="anchor" href="#creating-a-controller" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Creating a controller&lt;/h4&gt;
+
+&lt;p&gt;After I built this database layer, I went on to create the APIs. With Spring MVC, it wasn't hard at all.&lt;/p&gt;
+
+&lt;div class="highlight highlight-java"&gt;&lt;pre&gt;&lt;span class="nd"&gt;@RestController&lt;/span&gt;
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;QuoteController&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+
+    &lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="kd"&gt;final&lt;/span&gt; &lt;span class="n"&gt;QuoteRepository&lt;/span&gt; &lt;span class="n"&gt;repository&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+
+    &lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="kd"&gt;final&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="n"&gt;Quote&lt;/span&gt; &lt;span class="n"&gt;NONE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;Quote&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"None"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+
+    &lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="kd"&gt;final&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="n"&gt;Random&lt;/span&gt; &lt;span class="n"&gt;RANDOMIZER&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;Random&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@Autowired&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="nf"&gt;QuoteController&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;QuoteRepository&lt;/span&gt; &lt;span class="n"&gt;repository&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;repository&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;repository&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@RequestMapping&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"/api"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;method&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;RequestMethod&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;GET&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;List&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;QuoteResource&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;getAll&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;StreamSupport&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;stream&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;repository&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;findAll&lt;/span&gt;&lt;span class="o"&gt;().&lt;/span&gt;&lt;span class="na"&gt;spliterator&lt;/span&gt;&lt;span class="o"&gt;(),&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;map&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;q&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;QuoteResource&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;q&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"success"&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
+            &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;collect&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Collectors&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;toList&lt;/span&gt;&lt;span class="o"&gt;());&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@RequestMapping&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"/api/{id}"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;method&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;RequestMethod&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;GET&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;QuoteResource&lt;/span&gt; &lt;span class="nf"&gt;getOne&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nd"&gt;@PathVariable&lt;/span&gt; &lt;span class="n"&gt;Long&lt;/span&gt; &lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;repository&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;exists&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;QuoteResource&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;repository&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;findOne&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="o"&gt;),&lt;/span&gt; &lt;span class="s"&gt;"success"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+        &lt;span class="o"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;QuoteResource&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;NONE&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"Quote "&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;id&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;" does not exist"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+        &lt;span class="o"&gt;}&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@RequestMapping&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"/api/random"&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;method&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;RequestMethod&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;GET&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;QuoteResource&lt;/span&gt; &lt;span class="nf"&gt;getRandomOne&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nf"&gt;getOne&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;nextLong&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;repository&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;count&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;));&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+    &lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="kt"&gt;long&lt;/span&gt; &lt;span class="nf"&gt;nextLong&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;long&lt;/span&gt; &lt;span class="n"&gt;lowerRange&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;long&lt;/span&gt; &lt;span class="n"&gt;upperRange&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;long&lt;/span&gt;&lt;span class="o"&gt;)(&lt;/span&gt;&lt;span class="n"&gt;RANDOMIZER&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;nextDouble&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;upperRange&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;lowerRange&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;lowerRange&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Let's break it down:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The whole class is flagged as a &lt;code&gt;@RestController&lt;/code&gt;. This means all routes return objects not views.&lt;/li&gt;
+&lt;li&gt;I have some static objects, particular a &lt;code&gt;NONE&lt;/code&gt; quote and a Java 8 &lt;code&gt;Random&lt;/code&gt; for randomly picking quotes.&lt;/li&gt;
+&lt;li&gt;It uses constructor injection to get a hold of &lt;code&gt;QuoteRepository&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;table&gt;
+&lt;thead&gt;&lt;tr&gt;
+&lt;th&gt;API&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;/api&lt;/td&gt;
+&lt;td&gt;Fetch ALL quotes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;/api/{id}&lt;/td&gt;
+&lt;td&gt;Fetch quote &lt;strong&gt;id&lt;/strong&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;/api/random&lt;/td&gt;
+&lt;td&gt;Fetch a random quote&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;p&gt;To fetch ALL quotes, I use a Java 8 stream to wrap the Spring data's &lt;code&gt;findAll()&lt;/code&gt; and in turn, wrap each one into a &lt;code&gt;QuoteResource&lt;/code&gt;. The results are turned into a &lt;code&gt;List&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To fetch a single quote, it first tests if a given id exists. If not, return &lt;code&gt;NONE&lt;/code&gt;. Otherwise, return a wrapped quote.&lt;/p&gt;
+
+&lt;p&gt;Finally, to fetch a random quote, I use Java 8's &lt;code&gt;Random&lt;/code&gt; utility inside the &lt;code&gt;nextLong()&lt;/code&gt; utility method to fetch a &lt;code&gt;Long&lt;/code&gt; with the &lt;code&gt;lowerRange&lt;/code&gt; and &lt;code&gt;upperRange&lt;/code&gt;, inclusively.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;QUESTION:&lt;/strong&gt; Why am I using &lt;code&gt;QuoteResource&lt;/code&gt;? &lt;code&gt;Quote&lt;/code&gt; is the core domain object returned by the &lt;code&gt;QuoteRepository&lt;/code&gt;. To match the previous public API, I wrap each instance in a &lt;code&gt;QuoteResource&lt;/code&gt; which includes a &lt;strong&gt;status&lt;/strong&gt; code.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4&gt;
+&lt;a name="user-content-testing-the-results" class="anchor" href="#testing-the-results" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Testing the results&lt;/h4&gt;
+
+&lt;p&gt;With this in place, the default &lt;code&gt;Application&lt;/code&gt; class created by &lt;a href="http://start.spring.io"&gt;http://start.spring.io&lt;/a&gt; was ready to run.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ curl localhost:8080/api/random
+{
+    type: "success",
+    value: {
+        id: 1,
+        quote: "Working with Spring Boot is like pair-programming with the Spring developers."
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ta dah! &lt;/p&gt;
+
+&lt;p&gt;To wrap things up, I built the JAR file and pushed it up to &lt;a href="https://run.pivotal.io/"&gt;Pivotal Web Services&lt;/a&gt;. You can view the site yourself at &lt;a href="http://gturnquist-quoters.cfapps.io/api/random"&gt;http://gturnquist-quoters.cfapps.io/api/random&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Suffice it to say, I was able to tweak the &lt;a href="https://spring.io/guides/gs/messaging-reactor/"&gt;Reactor guide&lt;/a&gt; by altering &lt;a href="https://github.com/spring-guides/gs-messaging-reactor/blob/master/complete/src/main/java/hello/Receiver.java#L21"&gt;ONE LINE OF CODE&lt;/a&gt;. With that in place, I did some other clean up of the content and was done!&lt;/p&gt;
+
+&lt;p&gt;To see the code, please visit &lt;a href="https://github.com/gregturn/quoters"&gt;https://github.com/gregturn/quoters&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a name="user-content-outstanding-issues" class="anchor" href="#outstanding-issues" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;Outstanding issues&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This RESTful service satisfies &lt;a href="http://martinfowler.com/articles/richardsonMaturityModel.html#level2"&gt;Level 2 - HTTP Verbs&lt;/a&gt; of the Richardson Maturity Model. While good, it's best to shoot for &lt;a href="http://martinfowler.com/articles/richardsonMaturityModel.html#level3"&gt;Level 3 - Hypermedia&lt;/a&gt;. With &lt;a href="http://projects.spring.io/spring-hateoas"&gt;Spring HATEOAS&lt;/a&gt;, it's easier than ever to add hypermedia links. Stay tuned.&lt;/li&gt;
+&lt;li&gt;There is no friendly web page. This would be nice, but it isn't required.&lt;/li&gt;
+&lt;li&gt;Content is fixed and defined inside the app. To make content flexible, we would need to open the door to POSTs and PUTs. This would introduce the desire to also secure things properly.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;These are some outstanding things that didn't fit inside the time budget and weren't required to solve the original problem involving the Reactor guide. But they are good exercises you can explore! You can clone the project in github and take a shot at it yourself!&lt;/p&gt;
+
+&lt;h3&gt;
+&lt;a name="user-content-springone-2gx-2014" class="anchor" href="#springone-2gx-2014" aria-hidden="true"&gt;&lt;span class="octicon octicon-link"&gt;&lt;/span&gt;&lt;/a&gt;SpringOne 2GX 2014&lt;/h3&gt;
+
+&lt;p&gt;Book your place at &lt;a href="https://2014.event.springone2gx.com/register"&gt;SpringOne&lt;/a&gt; in Dallas, TX for Sept 8-11 soon. It's simply the best opportunity to find out first hand all that's going on and to provide direct feedback. You can see myself and Roy Clarkson talk about &lt;a href="https://2014.event.springone2gx.com/schedule/sessions/spring_data_rest_data_meets_hypermedia.html"&gt;Spring Data REST - Data Meets Hypermedia&lt;/a&gt; to see how to merge Spring Data and RESTful services.&lt;/p&gt;</content>
+  </entry>
+</feed>
+

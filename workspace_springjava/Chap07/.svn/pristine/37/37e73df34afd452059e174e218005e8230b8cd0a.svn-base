@@ -1,0 +1,28 @@
+package abstraction002;
+
+public class Driver {
+	public static void main(String[] args) {
+		동물 animal = new 동물();
+		animal.showMe();
+		
+		포유류 mammalia = new 포유류();
+		mammalia.showMe();
+		
+		조류 bird = new 조류();
+		bird.showMe();
+		
+		고래 whale = new 고래();
+		whale.showMe();
+		
+		박쥐 bat = new 박쥐();
+		bat.showMe();
+		
+		참새 sparrow  = new 참새();
+		sparrow .showMe();
+		
+		펭귄 penguin = new 펭귄();
+		penguin.showMe();
+		
+	}
+
+}

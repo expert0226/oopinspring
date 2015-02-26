@@ -1,0 +1,13 @@
+package abstraction001;
+
+public class Mouse {
+	String name;
+	String nationality;
+	int age;
+	String girlFriend;
+	
+	void sing() {
+		System.out.println(girlFriend.length());
+		System.out.println(name + " 찍찍!!!");
+	}
+}

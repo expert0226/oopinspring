@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boardDAO">
+	<select id="list" resultType="boardVO">
+		SELECT * FROM BOARD 
+		WHERE 1 = 1
+		ORDER BY seq
+	</select>
+	
+	<select id="select" parameterType="int" resultType="boardVO">
+		SELECT * FROM BOARD WHERE seq = #{seq}
+	</select>
+	
+	<insert id="insert" parameterType="boardVO">
+		INSERT INTO BOARD 
+			(title, content, writer, password, regDate, cnt) 
+		VALUES 
+			(#{title}, #{content}, #{writer}, #{password}, SYSDATE, 0);
+		<selectKey keyProperty="seq" resultType="Integer">
+			SELECT NVL(MAX(seq), 0) FROM BOARD
+		</selectKey>
+	</insert>
+	
+	<update id="update" parameterType="boardVO">
+		UPDATE BOARD SET
+			  title = #{title}
+			, content = #{content}
+			, writer = #{writer}
+		WHERE seq = #{seq}
+		AND password = #{password}
+	</update>
+	
+	<update id="updateCount" parameterType="int">
+		UPDATE BOARD SET
+			  cnt = cnt + 1
+		WHERE seq = #{seq}
+	</update>
+	
+	<delete id="delete" parameterType="boardVO">
+		DELETE FROM BOARD 
+		WHERE seq = #{seq}		
+		AND password = #{password}
+	</delete>	
+	
+	<delete id="deleteAll">
+		DELETE FROM BOARD 
+	</delete>
+</mapper>
