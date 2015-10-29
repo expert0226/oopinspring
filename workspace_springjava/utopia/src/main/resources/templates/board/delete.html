@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+  <form th:action="@{/board/delete}" method="post">
+   <input type="hidden" name="seq" th:value="${seq}" />
+   비밀번호<input name="pwd"/>
+   <input type="submit" />
+   <a href="" th:href="@{'/board/read/' + ${seq}}">취소</a>
+  </form>
+  <div th:text="${msg}"></div>
+</body>
+</html>

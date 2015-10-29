@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:action="@{/board/write}" method="post">
+		<table border="1">
+			<tr>
+				<th><label for="title">제목</label></th>
+				<td><input name="title" /></td>
+			</tr>
+			<tr>
+				<th><label for="content">내용</label></th>
+				<td><input name="content" /></td>
+			</tr>
+			<tr>
+				<th><label for="writer">작성자</label></th>
+				<td><input name="writer" /></td>
+			</tr>
+			<tr>
+				<th><label for="password">비밀번호</label></th>
+				<td><input name="password" /></td>
+			</tr>
+		</table>
+		<div>
+			<input type="submit" value="등록" /> <a
+				href="list.html" th:href="@{/board/list}">목록</a>
+		</div>
+	</form>
+</body>
+</html>

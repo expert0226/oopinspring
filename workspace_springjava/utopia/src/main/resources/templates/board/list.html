@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<th>NO</th>
+			<th>제목</th>
+			<th>작성자</th>
+			<th>작성일</th>
+			<th>조회수</th>
+		</tr>
+		<tr th:each="board : ${boardList}">
+			<td th:text="${board.seq}">1</td>
+			<td><a 
+				href="" 
+				th:href="@{'/board/read/' + ${board.seq}}" 
+				th:text="${board.title}">
+				타임리프(백리향)</a></td>
+			<td th:text="${board.writer}">홍길동</td>
+			<td th:text="${board.regDate}">2015-10-30 01:09</td>
+			<td th:text="${board.cnt}">10</td>
+		</tr>
+	</table>
+	<a href="" th:href="@{/board/write}">새글</a>
+</body>
+</html>
